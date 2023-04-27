@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+header {
+    width: 100%;
+    position: relative;
+    height: calc( 100vw / 3 + 105px);
+}
+.home {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    z-index: 5;
+    top: 0;
+    right: 0;
+}
+.home img {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    right: 8px;
+}
+.gradi {
+    position: absolute;
+    width: 100%;
+    top: 118px;
+    margin: 0;
+    padding: 0;
+    height: 36px;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+    z-index: 3;
+}
+header img {
+    width: 100%;
+    object-fit: contain;
+    position: absolute;
+    top: 120px;
+    z-index: 1;
+}
+h1 {
+    font-family: 'Potta One', cursive;
+}
+header h1 {
+    font-size: 16px;
+    padding: 24px 8px;
+    text-align: center;
+    z-index: 5;
+}
+main {
+    margin: 32px 16px;
+}
+section {
+    margin-top: 16px;
+}
+section h1 {
+    font-size: 16px;
+}
+
+section p {
+    margin: 0;
+    padding: 12px;
+    font-size: 12px;
+}
+section img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 12px;
+    float: left;
+}
+section:nth-child(2n) > div > img {
+    float: right;
+}
+section div {
+    min-height: 110px;
+}
+footer {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+footer img {
+    margin: 0;
+    height: 150px;
+    width: 100%;
+    object-fit: cover;
+    border: none;
+}
+@media (min-width: 500px) {
+    header h1 {
+        font-size: 20px;
+    }
+    .home {
+        width: 32px;
+        height: 32px;
+        right: 12px;
+        top: 8px
+    }
+    .home img {
+        width: 32px;
+        height: 32px;
+        right: 12px;
+        top: 8px;
+    }
+    section h1 {
+        font-size: 20px;
+    }
+    section p {
+        font-size: 14px;
+    }
+}
+@media (min-width: 750px) {
+    header {
+        width: 750px;
+        margin: 0 auto;
+        height: 355px;
+    }
+    main {
+        width: 716px;
+        margin: 32px auto;
+    }
+}
